@@ -1,0 +1,539 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+
+}
+
+#logo {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  
+}
+
+#logo img {
+  width: 420px;
+}
+
+
+.menu {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 6px;
+  
+}
+
+.menu a{
+ display: block;
+ text-align: center;
+ padding: 10px;
+ color: black;
+ text-decoration: none;
+ transition: background-color 1s;
+ font-size: 1.7rem;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* direita ******************************************************************************************************/
+
+#direita {
+  width: 60%;
+  float: left;
+  padding-right: 10px;
+}
+
+.itens {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  transition: box-shadow 1s;
+  border-radius: 5px;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.itens:hover{
+  box-shadow: 0px 10px 16px gray;
+
+
+}
+
+.itens img {
+  margin-right: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.itens p { 
+ font-size: 1.5rem; 
+ margin-top:50px;
+ width: 40%;
+}
+
+
+/* esquerda ******************************************************************************************************/
+
+#esquerda { 
+  float: left;
+  width: 40%;
+ 
+  
+
+}
+
+#contato { 
+  height: 120px;
+  font-size: 1em;
+  transition: box-shadow 1s;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: bold;
+  border-style: solid;
+  
+}
+
+#contato p {
+ justify-content: center;
+}
+
+
+
+#contato:hover {
+  box-shadow: 0px 10px 16px grey;
+}
+
+#venda { 
+  height: 360px;
+  font-size: 1em;
+  padding: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  background-image: url('volvo3.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+
+}
+
+
+#venda p {
+  font-size: 1em; 
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+
+
+
+#tele {
+  position: fixed;
+  margin: 0;
+  bottom: 5px;
+  right: 10px;
+}
+
+#tel p {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  
+ 
+  
+}
+
+#tel {
+ position: relative;
+ right: 70px;
+ bottom: 7px;
+ opacity: 0;
+ background-color: lightsalmon;
+ padding: 5px;
+ border-style: solid;
+ border-radius: 3px;
+}
+
+
+
+#telefone {
+  position: fixed;
+  height: 65px;
+  width: 65px;
+  bottom: 6px;
+  right: 10px;
+}
+
+#telefone:hover + #tel {
+  opacity: 1;
+}
+
+/* pag 2 *****************************************************************************************************/
+
+#centro {
+  margin: 20px;
+  width: 100%;
+  height: 500px; 
+  justify-content: center;
+  border-style: solid;
+  font-size: 2rem;
+  padding: 10px;
+  position: relative;
+  right: 20px;
+ 
+ 
+}
+
+
+
+
+#finan { 
+ border-style: solid;
+ border-radius: 10px;
+ position: absolute;
+ width: 530px;
+ height: 207px;
+ margin: 30px;
+ bottom: 0px;
+ left: 0px;
+
+}
+ 
+
+#porsche {
+  border-style: solid;
+  border-radius: 10px;
+  position: absolute;
+  width: 550px;
+  height: 315px;
+  float: left;
+  display: flex;
+  right: 0px;
+  bottom: 0px;
+  margin: 30px;
+}
+
+/* pag 3 *****************************************************************************************************/
+
+#mapa {
+  height: 305px;
+  width: 565px;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  position: absolute;
+  top: 165px; 
+}
+
+#end  {
+  position: absolute;
+  right: 7%;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+@media screen and (max-width: 1320px)
+{
+  #finan {
+   width: 379px;
+   height: 200px;
+   margin: 15px;
+  }
+  
+
+  #porsche {
+   width: 435px;
+   height: 269px;
+   margin: 15px;
+  }
+
+ 
+  #mapa {
+       height: 260px;
+    width: 480px;
+    top: 205px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1000px)
+{
+  #esquerda { 
+   width: 100%;
+  }
+  
+  #direita {
+   width: 100%;
+  }
+    
+  .itens img {
+   height: 110px;
+   width: 110px;
+   margin-top: 20px;
+   margin-right: 20px;
+  }
+
+  #porsche {
+   left: 0px;
+  }
+  
+  #centro {
+    height: 850px;
+  }
+
+  #finan {
+    bottom: 290px;
+    width: 435px;
+  }
+  
+   #end {
+   top: 510px;
+   left: 4%;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 870px)
+{
+  #mapa {
+   
+   top: 235px;
+  }
+}
+ 
+
+
+
+@media screen and (max-width: 600px)
+{
+  .itens p { 
+   font-size: 1.2em; 
+  }
+    
+  .menu a {
+   font-size: 1.2rem;
+  }
+
+  .itens img {
+   height: 80px;
+   width: 80px; 
+  }
+
+  #contato {
+   padding-top: 20px; 
+  }
+
+  .itens {
+   padding: 15px;
+  }
+  
+  #logo img {
+   width: 320px;
+  }
+
+  #logo {
+    height: 140px;
+
+  } 
+
+  #porsche {
+   height: 230px;
+    width: 360px;
+  }
+  
+  #centro {
+    height: 730px;
+    font-size: 1.5rem;
+  }
+
+  #finan {
+    height: 190px;
+    width: 360px;
+  }
+  
+  #mapa {
+       height: 240px;
+    width: 385px;
+    top: 210px;
+  }
+}
+
+
+
+@media screen and (max-width: 550px)
+{
+  .itens p { 
+   margin-top: 35px;
+   width: 60%;
+  } 
+
+  .itens img {
+   height: 60px;
+   width: 60px;
+  }
+
+  .itens {
+   height: 120px;
+  }
+
+  #mapa {
+   height: 170px;
+   width: 300px;
+   top: 210px;
+  }
+
+   #end {
+   top: 445px;
+   }
+   
+}
+
+
+ @media screen and (max-width: 520px)
+{
+  #porsche {
+   height: 195px;
+    width: 280px;
+  }
+  
+  #centro {
+    height: 600px;
+    font-size: 1.2rem;
+  }
+
+  #finan {
+    height: 140px;
+    width: 280px;
+    bottom: 235px;
+  }
+
+}  
+
+
+  @media screen and (max-width: 420px)
+{ 
+  .menu a {
+   font-size: 1rem;
+  }
+  
+  .itens p { 
+   font-size: 1rem; 
+   width: 80%;
+  }
+
+  .itens img {
+   margin-left: 8px;
+   margin-right: 8px;  
+  }
+
+  #contato {
+   font-size: 0.7em;  
+  }
+
+  #venda {
+   font-size: 0.6rem;
+  }
+   
+  #logo img {
+   width: 240px;
+  }
+
+  #logo {
+    height: 100px;
+
+  } 
+
+  #porsche {
+    height: 161px;
+    width: 227px;
+  }
+  
+  #centro {
+    height: 500px;
+    font-size: 1rem;
+    margin: 10px;
+    right: 10px;
+  }
+
+  #finan {
+    height: 105px;
+    width: 226px;
+    bottom: 180px;
+  }
+  
+  #mapa {
+  height: 160px;
+    width: 220px;
+    top: 210px;
+   }
+
+   #end {
+   top: 410px;
+   }
+}
+
+
+
+  @media screen and (max-width: 350px)
+{
+  #porsche {
+    height: 125px;
+    width: 167px;
+    margin: 5px;
+  }
+  
+  #centro {
+    height: 380px;
+    font-size: 0.7rem;
+    margin: 10px;
+  }
+
+  #finan {
+    height: 90px;
+    width: 167px;
+    bottom: 145px;
+    margin: 5px;
+  }
+
+   #mapa {
+       height: 100px;
+    width: 135px;
+    top: 120px;
+  }
+
+  #end {
+   top: 250px;
+   }
+
+
+
+
+
+
+
+
+}
